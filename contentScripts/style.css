@@ -1,0 +1,66 @@
+div[aria-labelledby]:not([aria-labelledby=""]).r-1s367qj,
+div[aria-labelledby]:not([aria-labelledby=""]).r-1ssbvtb,
+div[aria-labelledby]:not([aria-labelledby=""]).r-19qsa7v,
+div[aria-labelledby]:not([aria-labelledby=""]).r-1i71y14 {
+    visibility: hidden !important;
+    height: 15px !important;
+    width: 150px !important;
+}
+
+div[aria-labelledby]:not([aria-labelledby=""]).r-1s367qj:hover,
+div[aria-labelledby]:not([aria-labelledby=""]).r-1ssbvtb:hover,
+div[aria-labelledby]:not([aria-labelledby=""]).r-19qsa7v:hover,
+div[aria-labelledby]:not([aria-labelledby=""]).r-1i71y14:hover {
+    visibility: visible !important;
+    height: fit-content !important;
+    width: 50% !important;
+}
+
+div[aria-labelledby]:not([aria-labelledby=""]).r-1s367qj::before,
+div[aria-labelledby]:not([aria-labelledby=""]).r-1ssbvtb::before,
+div[aria-labelledby]:not([aria-labelledby=""]).r-19qsa7v::before,
+div[aria-labelledby]:not([aria-labelledby=""]).r-1i71y14::before {
+    visibility: visible !important;
+    content: '+ Show media' !important;
+}
+
+.r-1hwvwag,
+.r-jgbqyi,
+.r-1x2qdy1,
+.r-h7e6lq,
+.r-1bi8zh6 {
+    display: none !important;
+    flex-basis: 0px !important;
+}
+
+.r-h9hxbl {
+    filter: grayscale(100%);
+}
+
+@media (max-width: 768px) {
+    header {
+        position: absolute !important;
+        left: -60px !important;
+        flex: unset !important;
+    }
+    header:hover {
+        left: 0 !important;
+    }
+    .r-33ulu8 {
+        margin: auto !important;
+        width: 80% !important;
+    }
+    header>div>.r-1pi2tsx {
+        background-color: #fff !important;
+    }
+    .r-xnswec,
+    .r-1upvrn0 {
+        left: 0px !important;
+    }
+    .r-jxzhtn {
+        padding: 0 40px !important;
+    }
+    #layers .r-aqfbo4 {
+        left: 0px !important;
+    }
+}
