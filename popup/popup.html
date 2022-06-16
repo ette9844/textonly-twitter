@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="popup.css">
+    <script src="../thirdParty/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="popup.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="title">
+            <div class="row">
+                <label>Textonly twitter</label>
+                <label class="switch">
+                  <input id="textonly-input" type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <hr/>
+        <div class="body">
+            <div class="row">
+                <label>Grayscale emoji</label>
+                <label class="switch">
+                    <input id="grayscale-emoji-input" type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="row">
+                <label>Media box size</label>
+                <input id="media-box-size-input" class="percent" type="number" min="0" max="100">&nbsp;%
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
