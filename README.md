@@ -5,6 +5,6 @@ Chrome extension to hide twitter media. Make your twitter simpler. Download it f
 Optimized for smallest window, light mode twitter.
 
 # Change Log
-## 1.1 (2022-06-)
+## 1.1 (2022-06-22)
 * add setting popup
 * store setting in local storage
