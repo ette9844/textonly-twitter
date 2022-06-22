@@ -5,8 +5,8 @@ let setting = {};
 
 chrome.storage.sync.get(['textonly', 'grayscaleEmoji', 'mediaSize'], function(result) {
     setting.textonly = result.textonly != null ? result.textonly : true;
-    setting.grayscaleEmoji = result.key != null ? result.key : true;
-    setting.mediaSize = result.key != null ? result.key : 100;
+    setting.grayscaleEmoji = result.grayscaleEmoji != null ? result.grayscaleEmoji : true;
+    setting.mediaSize = result.mediaSize != null ? result.mediaSize : 100;
     renderAll(setting);
 });
 
