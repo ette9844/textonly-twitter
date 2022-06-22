@@ -13,23 +13,30 @@
             <div class="row">
                 <label>Textonly twitter</label>
                 <label class="switch">
-                  <input id="textonly-input" type="checkbox" checked>
+                  <input id="textonly-input" name="textonly" type="checkbox" checked>
                   <span class="slider round"></span>
                 </label>
             </div>
         </div>
         <hr/>
         <div class="body">
+            <div class="whitebox"></div>
             <div class="row">
                 <label>Grayscale emoji</label>
                 <label class="switch">
-                    <input id="grayscale-emoji-input" type="checkbox" checked>
+                    <input id="grayscale-emoji-input" name="grayscaleEmoji" type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
             </div>
             <div class="row">
                 <label>Media box size</label>
-                <input id="media-box-size-input" class="percent" type="number" min="0" max="100">&nbsp;%
+                <select id="media-size-select" name="mediaSize">
+                    <option value="100">100%</option>
+                    <option value="75">75%</option>
+                    <option value="50">50%</option>
+                    <option value="25">25%</option>
+                    <option value="0">None</option>
+                </select>
             </div>
         </div>
     </div>

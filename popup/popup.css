@@ -14,6 +14,14 @@
     margin-bottom: 5px;
 }
 
+.whitebox {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99;
+    width: 100%;
+    height: 300px;
+}
+
 .switch {
     margin-left: auto;
     position: relative;
@@ -66,14 +74,9 @@ input:checked+.slider:before {
     transform: translateX(13px);
 }
 
-input.percent {
+select {
     margin-left: auto;
-    height: 13px;
-    width: 32px;
-}
-
-input.percent:after {
-    content: "%";
+    width: 65px;
 }
 
 

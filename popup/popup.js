@@ -1,48 +1,43 @@
-// Rendering
-function renderTextonly() {
-
-}
-
-function renderGrayscaleEmoji() {
-
-}
-
-function renderMediaSize() {
-
-}
-
 $(function() {
+    // Initialize
+    let setting = {};
+    const $textonlyInput = $('#textonly-input');
+    const $grayscaleEmojiInput = $('#grayscale-emoji-input');
+    const $mediaSizeSelect = $('#media-size-select');
+    const $whitebox = $(".whitebox");
 
-    var $textonlyInput = $('#textonly-input');
-    var $grayscaleEmojiInput = $('#grayscale-emoji-input');
-    var $mediaSizeInput = $('#media-size-input');
+    chrome.storage.sync.get(['textonly', 'grayscaleEmoji', 'mediaSize'], function(result) {
+        setting.textonly = result.textonly != null ? result.textonly : true;
+        setting.grayscaleEmoji = result.grayscaleEmoji != null ? result.grayscaleEmoji : true;
+        setting.mediaSize = result.mediaSize != null ? result.mediaSize : 100;
 
-    $textonlyInput.prop('checked', textonly);
-    $grayscaleEmojiInput.prop('checked', grayscaleEmoji);
-    $mediaSizeInput.val(mediaSize);
+        setting.textonly ? $whitebox.hide() : $whitebox.show();
+        $textonlyInput.prop('checked', setting.textonly);
+        $grayscaleEmojiInput.prop('checked', setting.grayscaleEmoji);
+        $mediaSizeSelect.val(setting.mediaSize);
+    });
 
-    // Event listener
+    // Setting change listener
     $textonlyInput.on('change', function() {
-        if (this.checked) {
-            textonly = true;
-        } else {
-            textonly = false;
-        }
-        renderTextonly();
-        chrome.storage.sync.set({ 'textonly': textonly }, function() {});
+        setting.textonly = this.checked ? true : false;
+        setting.textonly ? $whitebox.hide() : $whitebox.show();
+        chrome.storage.sync.set({ textonly: setting.textonly });
+        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, { message: 'RENDER_TEXTONLY', setting: setting });
+        });
     });
     $grayscaleEmojiInput.on('change', function() {
-        if (this.checked) {
-            grayscaleEmoji = true;
-        } else {
-            grayscaleEmoji = false;
-        }
-        renderGrayscaleEmoji();
-        chrome.storage.sync.set({ 'grayscaleEmoji': grayscaleEmoji }, function() {});
+        setting.grayscaleEmoji = this.checked ? true : false;
+        chrome.storage.sync.set({ grayscaleEmoji: setting.grayscaleEmoji });
+        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, { message: 'RENDER_GRAYSCALE_EMOJI', setting: setting });
+        });
     });
-    $mediaSizeInput.on('change', function() {
-        mediaSize = $(this).val();
-        renderMediaSize();
-        chrome.storage.sync.set({ 'mediaSize': mediaSize }, function() {});
+    $mediaSizeSelect.on('change', function() {
+        setting.mediaSize = $(this).val();
+        chrome.storage.sync.set({ mediaSize: setting.mediaSize });
+        chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+            chrome.tabs.sendMessage(tabs[0].id, { message: 'RENDER_MEDIA_SIZE', setting: setting });
+        });
     });
 });
