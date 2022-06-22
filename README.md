@@ -8,3 +8,6 @@ Optimized for smallest window, light mode twitter.
 ## 1.1 (2022-06-22)
 * add setting popup
 * store setting in local storage
+
+## 1.11 (2022-06-22)
+* resolve setting saving error
