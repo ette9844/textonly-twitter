@@ -9,7 +9,7 @@
         "css": ["/contentScripts/style.css"],
         "run_at": "document_idle"
     }],
-    "permissions": ["storage", "tabs"],
+    "permissions": ["storage"],
     "action": {
         "default_popup": "/popup/popup.html",
         "default_icon": {
