@@ -19,7 +19,6 @@ Optimized for smallest window, light mode twitter.
 
 ## 1.12 (2022-10-01)
 * side menu to top menu
-* add top menu setting
 * add hide emoji setting
 
 ## 1.13
