@@ -23,4 +23,4 @@ Optimized for smallest window, light mode twitter.
 
 ## 1.13
 * available on dark mode
-* available on all font siz
+* available on all font size
