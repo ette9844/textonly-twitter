@@ -1,7 +1,7 @@
 {
     "name": "Textonly Twitter",
     "description": "Enjoy your text-only twitter! made by ette9844",
-    "version": "1.11",
+    "version": "1.12",
     "manifest_version": 3,
     "content_scripts": [{
         "matches": ["https://*.twitter.com/*"],

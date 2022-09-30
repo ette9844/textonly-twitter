@@ -64,6 +64,10 @@
     filter: grayscale(100%);
 }
 
+.tt-textonly.tt-hide-emoji .r-h9hxbl {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .tt-textonly header>div>div {
         top: 0 !important;
@@ -82,7 +86,7 @@
     }
     .tt-textonly header .css-1dbjc4n {
         flex-direction: row;
-        width: fit-content;
+        width: auto;
         height: 30px !important;
         min-height: 30px !important;
         line-height: 30px !important;
