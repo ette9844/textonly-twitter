@@ -64,30 +64,64 @@
     filter: grayscale(100%);
 }
 
+.tt-textonly.tt-hide-emoji .r-h9hxbl {
+    display: none;
+}
+
 @media (max-width: 768px) {
-    .tt-textonly header {
-        position: absolute !important;
-        left: -60px !important;
-        flex: unset !important;
-    }
-    .tt-textonly header:hover {
-        left: 0 !important;
-    }
-    .tt-textonly .r-33ulu8 {
-        margin: auto !important;
-        width: 80% !important;
-    }
-    .tt-textonly header>div>.r-1pi2tsx {
+    .tt-textonly header>div>div {
+        top: 0 !important;
+        z-index: 99 !important;
         background-color: #fff !important;
+        border-bottom-width: 1px !important;
+        border-bottom-color: rgb(239, 243, 244) !important;
     }
-    .tt-textonly .r-xnswec,
-    .tt-textonly .r-1upvrn0 {
-        left: 0px !important;
+    .tt-textonly header>div,
+    .tt-textonly header>div>div,
+    .tt-textonly header>div>div>div {
+        width: 100% !important;
     }
-    .tt-textonly .r-jxzhtn {
-        padding: 0 40px !important;
+    .tt-textonly header>div>div>div {
+        flex-direction: row;
     }
-    .tt-textonly #layers .r-aqfbo4 {
-        left: 0px !important;
+    .tt-textonly header .css-1dbjc4n {
+        flex-direction: row;
+        width: auto;
+        height: 30px !important;
+        min-height: 30px !important;
+        line-height: 30px !important;
+        border-radius: 0px !important;
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+    .tt-textonly header .css-1dbjc4n.r-usiww2 {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        flex-grow: 1 !important;
+    }
+    .tt-textonly header .r-rs99b7 {
+        border: none !important;
+    }
+    .tt-textonly header h1 {
+        display: none !important;
+    }
+    .tt-textonly header .r-xyw6el>div {
+        width: 20px !important;
+        margin-top: 5px !important;
+    }
+    .tt-textonly header>div>div>div>div.css-1dbjc4n.r-1awozwy.r-usiww2>div>div::after {
+        content: '⚪' !important;
+    }
+    .tt-textonly header>div>div>div>div.css-1dbjc4n.r-1awozwy.r-usiww2>div>div>div {
+        display: none !important;
+    }
+    .tt-textonly main {
+        margin-top: 30px !important;
+    }
+    .tt-textonly main .r-1gn8etr {
+        top: auto !important;
+    }
+    .tt-textonly .r-1ye8kvj {
+        max-width: inherit !important;
     }
 }
