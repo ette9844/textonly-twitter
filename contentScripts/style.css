@@ -133,6 +133,7 @@
         min-height: 30px !important;
         line-height: 30px !important;
         border-radius: 0px !important;
+        overflow-x: hidden;
         overflow-y: hidden !important;
         margin-top: 0px !important;
         margin-bottom: 0px !important;

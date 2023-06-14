@@ -32,3 +32,7 @@ Optimized for smallest window, light mode twitter.
 
 - available on dark mode
 - available on all font size
+
+## 1.14
+
+- add scroll to top menu
