@@ -32,3 +32,8 @@ Optimized for smallest window, light mode twitter.
 
 - available on dark mode
 - available on all font size
+
+## 1.14 (2024-07-08)
+
+- modify css to match latest x version
+- add x domain in manifest
