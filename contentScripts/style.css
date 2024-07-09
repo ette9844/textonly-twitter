@@ -126,7 +126,7 @@
     border-radius: 0px !important;
   }
 
-  .tt-textonly div[role="menu"] {
+  .tt-textonly div[role="menu"]:has(a[href="/settings"]) {
     top: 30px !important;
     right: 0 !important;
     overflow: auto !important;

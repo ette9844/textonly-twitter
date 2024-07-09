@@ -35,3 +35,7 @@ Chrome extension to hide twitter media. Make your twitter simpler. Download it f
 
 - modify css to match latest x version
 - add x domain in manifest
+
+## 1.15 (2024-07-09)
+
+- change menu selector in detail
